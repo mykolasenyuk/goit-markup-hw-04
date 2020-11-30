@@ -1,0 +1,196 @@
+
+
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* вторичный цвет фона #F5F4FA */
+
+
+:root{
+    --custom-text-color:#212121; 
+    --text-color: #757575;
+    --accent-color:#2196F3 ;
+    --primary-white-color: #ffffff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+a{text-decoration: none;
+}
+
+.page{
+    background-color: var(--primary-white-color);
+    color: var(--custom-text-color);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    
+}
+
+.page-header{
+    border-bottom : 1px solid #ECECEC;
+}
+
+
+/* ===utility=== */
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* ==end utility=== */
+
+
+/* ===logo=== */
+.logo{
+    display: inline-block;
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    
+}
+.logo-nav{
+    color: #000000;
+}
+.logo-footer{
+    color: var(--primary-white-color);
+}
+/* === end logo=== */
+
+/* ===site nav=== */
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav-item+ .site-nav-item{
+    margin-left: 50px;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    
+    
+}
+
+.site-nav .site-nav-link {
+     display: block;
+     padding-top: 21px;
+     padding-bottom: 21px;
+    
+     color: var(--custom-text-color);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+
+
+    }
+.site-nav-link:hover, 
+.site-nav-link:focus{
+    color: var(--accent-color);
+}
+
+.site-nav-link.current{
+    color: var(--accent-color)
+}
+
+
+/* ===end site nav=== */
+
+
+/* ===address header=== */
+
+.address-item:hover, 
+.address-item:focus{
+    color: var(--accent-color);
+}
+
+.site-nav-address{
+    display: flex;
+    margin-left: auto;
+    
+    color: var(--text-color);   
+}
+
+
+.address-item{
+ 
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+   
+    
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    
+     font-style: normal;
+}
+.address-item+.address-item{
+    margin-left: 50px;
+}
+
+/* ===end address header=== */
+
+/* ===footer=== */
+
+
+.footer-address{
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.address-list{
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+      
+}
+.curent-address{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+}
+.address-list-link {
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.address-list-link:hover,
+.address-list-link:focus{
+    color: var(--accent-color);
+}
+/* ===end footer=== */
