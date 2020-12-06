@@ -12,6 +12,7 @@
     --text-color: #757575;
     --accent-color:#2196F3 ;
     --primary-white-color: #ffffff;
+    --secondary-background-color: #F5F4FA;
 }
 
 .visually-hidden {
@@ -64,6 +65,8 @@ a{text-decoration: none;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
+    padding-bottom: 25px;
+    padding-top: 24px;
     
 }
 .logo-nav{
@@ -127,10 +130,8 @@ a{text-decoration: none;
 
 /* ===address header=== */
 
-.address-item:hover, 
-.address-item:focus{
-    color: var(--accent-color);
-}
+
+
 
 .site-nav-address{
     display: flex;
@@ -142,7 +143,8 @@ a{text-decoration: none;
 
 .address-item{
  
-    display: block;
+    display: inline-flex;
+    align-items: center;
     padding-top: 21px;
     padding-bottom: 21px;
    
@@ -156,20 +158,52 @@ a{text-decoration: none;
     
      font-style: normal;
 }
+
+
+
+
+.address-item:hover, 
+.address-item:focus{
+    color: var(--accent-color);
+    fill: var(--accent-color)
+}
+
+
+
 .address-item+.address-item{
     margin-left: 50px;
+}
+.address-icon{
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
 }
 
 /* ===end address header=== */
 
 /* ===footer=== */
 
-
+/* ===address container=== */
+.logo.footer{
+    margin: 0;
+    padding: 0;
+}
 .footer-address{
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer-address> .container{
+    display: flex;
+    align-items: baseline;
+}
+
+.address-container{
+    margin-right: 70px;
+}
+
+
 .address-list{
     color: var(--primary-white-color);
     font-style: normal;
@@ -192,5 +226,56 @@ a{text-decoration: none;
 .address-list-link:hover,
 .address-list-link:focus{
     color: var(--accent-color);
+    
 }
+/* ===end address container=== */
+
+
+/* ===social links container=== */
+.join{
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-social-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-social-link{ 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+    fill:var(--primary-white-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+    background-color: var(--accent-color);
+}
+
+
+
+
+
+/* ===end social links container=== */
+
 /* ===end footer=== */
+
+
+

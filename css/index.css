@@ -6,7 +6,22 @@
     padding-bottom: 200px;
     text-align: center;
     background-color:#2F303A;
+   
 
+}
+.overlay{
+    display: block;
+    margin: auto;
+    height: 600px;
+    max-width: 1600px;
+    background-size: contain;
+    background-image: linear-gradient(
+        to right,
+    rgba(47, 48, 58, 0.4),  
+    rgba(47, 48, 58, 0.4)),
+     url('../img/index/bacground_picture.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .hero-title{
     margin-top: 0;
@@ -47,6 +62,7 @@
 .button.primary{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    
     font-family: inherit;
 }
 /* ===end buttons=== */
@@ -63,7 +79,7 @@
     color: var(--custom-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.67;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -120,6 +136,17 @@
     text-transform: uppercase;
 }
 
+.feature-icon-container{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--secondary-background-color);}
+
+
 
 /* ===end feature list=== */
 
@@ -148,14 +175,15 @@
 }
 
 
+
+
 /* ===end image list=== */
 
 /* ===team=== */
-.section-title.team{
-    padding-top: 94px;
-}
-.team-section{
-    padding-bottom: 94px;
+
+    
+.section.team{
+
     background-color: #F5F4FA;
 }
 .team-list{
@@ -175,11 +203,13 @@
 .team-list-card{
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 2px 1px rgba(0, 0, 0, 0.2);
 
     background: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    height: 368px;
+    
 
 }
 
@@ -188,7 +218,7 @@
 
 }
 .team-list-description{
-    padding: 30px 59px;
+    padding: 30px 32px;
 }
 
 .name{
@@ -203,12 +233,70 @@
     text-align: center;
    margin: 0;
    margin-top: 10px;
+   margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     
 }
+.social-links-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social-link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+}
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+
+}
 
     /* ===end team=== */
+
+    /* ===clients=== */
+.clients-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.client-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8 ;
+}
+.client-icon{
+    height: 50px;
+   
+}
+.client-link:hover,
+.client-link:focus{
+    border:1px solid var(--accent-color);
+    fill: var(--accent-color) ;
+}
+
+
+
+
+
+    /* ===end clients=== */
 
 
 
